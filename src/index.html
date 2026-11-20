@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>My To-Do List</h1>
+      <p>Organize your daily tasks</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span>Total Tasks</span>
+        <h2 id="total">0</h2>
+      </div>
+
+      <div class="stat">
+        <span>Completed</span>
+        <h2 id="completed">0</h2>
+      </div>
+
+      <div class="stat">
+        <span>Pending</span>
+        <h2 id="pending">0</h2>
+      </div>
+    </section>
+
+    <section class="add-section">
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter your task..."
+          required
+          maxlength="120"
+        >
+        <button type="submit">+ Add Task</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>My Tasks</h2>
+      <ul id="taskList"></ul>
+      <p id="emptyMessage">No tasks available. Add a task!</p>
+    </section>
+
+    <footer>
+      My To-Do Desktop Application
+    </footer>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
